@@ -1,16 +1,15 @@
 
 header{
-    background-image: url("assets/hallway-cropped.png");
+    background-image: url("/assets/hallway-cropped.png");
     background-size: cover;
     background-position: center;
-    color: white;
     padding: 100px 10px;
 }
 .title{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif   ;
     font-weight: bolder;
     font-size: 90pt;
-    color: white;
+    color: whitesmoke;
     text-align: center;
 }
 
