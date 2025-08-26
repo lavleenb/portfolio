@@ -1,0 +1,100 @@
+
+header{
+    background: src("assets/hallway-cropped.png");
+    background-size: cover;
+}
+.title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 90pt;
+    color: white;
+    text-align: center;
+}
+
+body{
+    background-color: #EEE9E9;
+}
+
+.navbar{
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: right;
+    top: 0px;
+    background: #B0BF93;
+    background-blend-mode: darken;
+    background-size: cover;
+    color: white;
+    padding: 10px 20px;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+    padding-right: 20px;
+}
+
+.nav-list li{
+    margin-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav-list li:last-child{
+    margin-right: 0;
+}
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-list li a:hover {
+    color: #98a879;
+}
+
+.current {
+    padding: 5px;
+    background: #98a879;
+    background-size: cover;
+}
+
+section {
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.art-commissions {
+    background-size: cover;
+    content: " ";
+    display: table;
+    clear: both;
+    align-items: center;
+}
+
+.left-image {
+    float: left;
+}
+.left-image img {
+    padding: 10px;
+    scale: 75%;
+}
+
+.right-text{ 
+    float: right;
+    justify-content: center;
+    padding: 10px;
+}
+.right-text h2 {
+    text-align: center;
+    font-size: 60pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:#B0BF93;
+    vertical-align: baseline;
+}
+.right-text p {
+    text-align: center;
+    font-size: 16pt;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategrey;
+    vertical-align:auto;
+}
