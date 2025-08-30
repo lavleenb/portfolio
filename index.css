@@ -1,20 +1,21 @@
 
 header{
-    background-image: url("/assets/hallway-cropped.png");
-    background-size: cover;
+    background-image: url("assets/hallway-cropped.png");
     background-position: center;
-    padding: 100px 10px;
+    background-size: cover;
+    padding: 100px;
+    margin: 0;
 }
 .title{
     font-family: Georgia, 'Times New Roman', Times, serif   ;
     font-weight: bolder;
+    font-style: oblique;
     font-size: 90pt;
     color: whitesmoke;
     text-align: center;
 }
 
 body{
-    margin-top: 30px;
     background-color: #EEE9E9;
 }
 
@@ -22,6 +23,7 @@ body{
     overflow: hidden;
     background-color: #B0BF93;
     position: fixed;
+    z-index: 1;
     top: 0;
     right: 0;
     width: 100%;
@@ -59,12 +61,45 @@ body{
 
 section {
     margin-top: 50px;
-    padding: 10px;
-    margin: auto;
+    margin: auto auto;
+}
+
+.landing-page {
+    content: " ";
+    display: table;
+    clear: both;
+    align-items: center;
+    margin: 60px;
+    margin-top: 100px;
+}
+.portrait-lav {
+    float: left;
+    margin-left: 1in;
+}
+.portrait-lav img {
+    width: 170%;
+}
+
+.landing-text {
+    float: right;
+    justify-content: center;
+    margin-right: 1in;
+    width: 50%;
+}
+.landing-text h2 {
+    color: #B0BF93;
+    font-size: 4vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.landing-text p {
+    color: darkslategrey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+    text-align: justify;
 }
 
 .art-commissions {
-    background-size: cover;
     content: " ";
     display: table;
     clear: both;
@@ -72,30 +107,91 @@ section {
 }
 
 .left-image {
-    float: left;
+    float: right;
 }
 .left-image img {
-    padding: 10px;
-    scale: 75%;
+    scale: 70%;
 }
 
 .right-text{ 
     float: right;
     justify-content: center;
-    padding: 10px;
     margin-top: 100px;
+    margin-left: 50px;
 }
 .right-text h2 {
     text-align: center;
-    font-size: 60pt;
+    font-size: 4vw;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color:#B0BF93;
-    vertical-align: baseline;
+    vertical-align: middle;
 }
 .right-text p {
     text-align: center;
     font-size: 16pt;
     font-family: Arial, Helvetica, sans-serif;
     color: darkslategrey;
-    vertical-align:auto;
+    vertical-align: auto;
+}
+.centre {
+    text-align: center;
+}
+.artworks-button {
+    height: 50px;
+    width: 90px;
+    background-color: #B0BF93;
+    color: white;
+    border: none;
+    outline: none;
+    margin-top: 50px;
+}
+.artworks-button:hover {
+    background-color: #98a879;
+}
+
+.resumes h2 {
+    text-align: center;
+    font-size: 4vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:#B0BF93;
+    vertical-align: middle;
+}
+
+.resume-box {
+    content: " ";
+    display: table;
+    clear: both;
+    align-items: center;
+}
+.cs-resume {
+    float: left;
+    width: 33.3%;
+    padding: 50px;
+}
+.art-resume {
+    float: right;
+    width: 66.6%;
+}
+.left-resume {
+    float: left;
+    width: 50%;
+    padding: 50px;
+}
+.right-portfolio {
+    float: right;
+    width: 50%;
+    padding: 50px;
+}
+
+footer{
+    background-image: url("assets/footer-bg.png");;
+    background-position: top;
+    background-size: cover;
+    padding: 65px;
+}
+
+footer p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 120px;
 }
