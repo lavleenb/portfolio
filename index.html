@@ -22,10 +22,11 @@
         </nav>
     </header>
     <section class="landing-page">
-        <div class="portrait-lav">
-            <img src="assets/lavlavs.jpeg">
+        <div class="landing-page-row">
+        <div class="landing-page-column">
+            <img src="assets/lav.JPG">
         </div>
-        <div class="landing-text">
+        <div class="landing-page-column">
             <h2>who is gulaabi art?</h2>
             <p> Gulaabi.Art, aka Lavleen Kaur, is a digital artist and a student at the University of Toronto. 
                 She is currently studying mathematics, computer science, and professional writing.
@@ -34,33 +35,35 @@
                 from television, film, and comics. She is also a lover of fashion and visual aesthetics. 
             </p>
         </div>
+        </div>
     </section>
     <section class="art-commissions">
-        <div class="left-image">
-            <img src="assets/oscars_ariana copy.png">
-        </div>
-        <div class="right-text">
+        <div class="comm-row">
+        <div class="comm-column">
             <h2>here for the art?</h2>
             <p>Check out my artworks page for more details about my work.</p>
             <div class="centre">
-                <button class="artworks-button">Learn More</button>
+                <button onclick="location.href='artwork.html'" class="artworks-button">Learn More</button>
             </div>
+        </div>
+        <div class="comm-column">
+            <div class="parent">
+                <img class="bottom" src="assets/oscars_ariana copy 2.png">
+                <img class="top" src="assets/oscars_ariana copy.png">
+            </div>
+        </div>
         </div>
     </section>
     <section class="resumes">
         <h2>resumés</h2>
         <section class="resume-box">
-            <div class="cs-resume">
-                <h3>resumé</h3>
-                <object>
-                    <embed src="./assets/Lavleen Bhachu Resume.pdf" width="475" height="375" type="application/pdf">
-                </object>
-            </div>
-            <div class="art-resume">
-                <h3>artists portfolio + resumé</h3>
-                <object>
-                    <embed src="./assets/Lavleen Bhachu Resume.pdf" width="475" height="375" type="application/pdf">
-                </object>
+            <div class="resume-row">
+                <div class="resume-column">
+                    <h3>resumé</h3>
+                </div>
+                <div class="resume-column">
+                    <h3>artists portfolio + resumé</h3>
+                </div>
             </div>
         </section>
     </section>
