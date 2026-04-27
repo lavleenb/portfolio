@@ -1,5 +1,6 @@
 const pic = document.getElementById('myImg')
 const btn = document.getElementById('close-modal-btn');
+/* TODO: brute force all the modals tbh */
 const modals = document.querySelectorAll('#ariModal', '#charliModal', '#glitzySabrinaModal');
 modals.forEach(modal => {
     pic.addEventListener('click', function() {
