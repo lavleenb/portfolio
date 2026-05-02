@@ -1,32 +1,30 @@
-const pic = document.getElementById('myImg')
-const btn = document.getElementById('close-modal-btn');
-/* TODO: brute force all the modals tbh */
-const modals = document.querySelectorAll('#ariModal', '#charliModal', '#glitzySabrinaModal');
-modals.forEach(modal => {
-    pic.addEventListener('click', function() {
-        showModal(modal);
-    })
-    btn.addEventListener('click', function() {
-        closeModal(modal);
-    })
+function showModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.classList.add('show');
+    }
+}
+
+function closeModal(modal) {
+    if (modal) {
+        modal.classList.remove('show');
+    }
+}
+
+// Add event listeners to images with data-modal attribute
+const images = document.querySelectorAll('img[data-modal]');
+images.forEach(img => {
+    img.addEventListener('click', () => {
+        const modalId = img.getAttribute('data-modal');
+        showModal(modalId);
+    });
 });
 
-function showModal(input){
-  if(input){
-    input.style.display == 'flex';
-  }
-}
-
-function closeModal(input){
-  if(input){
-    input.style.display == 'none';
-  }
-}
-/* if (pic) {
-    pic.addEventListener('click', function(){
-        showModal()
-    }, false);
-}
-if (btn) {
-    btn.addEventListener('click', closeModal, false);
-} */
+// Add event listeners to all close buttons
+const closeButtons = document.querySelectorAll('.close-modal-btn');
+closeButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const modal = button.closest('.modal');
+        closeModal(modal);
+    });
+});

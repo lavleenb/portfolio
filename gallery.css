@@ -37,6 +37,7 @@ button:hover {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 100;
 }
+
 .modal-content {
   position: relative;
   width: 60%;
@@ -44,7 +45,7 @@ button:hover {
   max-width: 60%;
   max-height: 90%;
   border-radius: 5px;
-  overflow:hiden;
+  overflow: hidden;
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -54,29 +55,30 @@ button:hover {
   from {transform: scale(0.6);}
   to {transform: scale(1);}
 }
-.left-img {
+.left-image {
   left: 0;
   top: 0;
   width: 50%;
+}
+.modal-image{
+  height: 40%;
 }
 .right-text {
-  left: 0;
-  top: 0;
-  width: 50%;
+  width: 40%;
+  padding: 1in;
 }
 .right-text p {
-  margin-top: 4in;
   vertical-align: middle;
   text-align: right;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .modal.show {
-  display: flex;
+  display: block;
   opacity: 1;
 }
 
-.close {
+/* .close {
   position: absolute;
   top: 10px;
   right: 15px;
@@ -85,4 +87,4 @@ button:hover {
   font-weight: bold;
   cursor: pointer;
   transition: transform 0.3s;
-}
+} */

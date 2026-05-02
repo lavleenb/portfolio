@@ -5,6 +5,7 @@ header{
     padding: 100px;
     margin: 0;
 }
+
 .title{
     font-family: Georgia, 'Times New Roman', Times, serif   ;
     font-weight: bolder;
@@ -12,8 +13,8 @@ header{
     font-size: 90pt;
     color: whitesmoke;
     text-align: center;
+    animation: slideIn 0.5s;
 }
-
 body{
     background-color: #EEE9E9;
 }
@@ -60,6 +61,7 @@ body{
 section {
     margin-top: 50px;
     margin: auto auto;
+    animation: slideIn 0.5s;
 }
 
 .gallery-box{
@@ -80,13 +82,18 @@ section {
     width: 90%;
 }
 
-#myImg {
+.column img {
   cursor: pointer;
   transition: 0.3s;
 }
-#myImg:hover {opacity: 0.7;}
+.column img:hover {opacity: 0.7;}
 
 #caption {
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes slideIn {
+    from {transform: translateY(1rem);}
+    to {transform: translateY(0);}
 }
