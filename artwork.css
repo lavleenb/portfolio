@@ -94,6 +94,10 @@ section {
 }
 
 @keyframes slideIn {
-    from {transform: translateY(1rem);}
-    to {transform: translateY(0);}
+    from {transform: translateY(1rem);
+        opacity: 50%;
+    }
+    to {transform: translateY(0);
+        opacity: 100%;
+    }
 }

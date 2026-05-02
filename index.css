@@ -190,19 +190,25 @@ section {
 
 footer{
     background-image: url("assets/footer-bg.png");
-    background-position: top;
+    background-position:bottom;
     background-size: cover;
+    overflow: hidden;
     padding: 65px;
+    animation: slideIn 0.5s;
 }
 
 footer p {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    padding-top: 130px;
+    padding-top: 2in;
     color: white;
 }
 
 @keyframes slideIn {
-    from {transform: translateY(1rem);}
-    to {transform: translateY(0);}
+    from {transform: translateY(1rem);
+        opacity: 50%;
+    }
+    to {transform: translateY(0);
+        opacity: 100%;
+    }
 }

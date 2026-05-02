@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artworks Page</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="contact.css">
     <link rel="icon" type="image/x-icon" href="assets/gulaabipfp.ico">
 </head>
 <body>
@@ -19,6 +20,20 @@
             </ul>
         </nav>
     </header>
+    <section class="contact-form">
+        <form name="contact-form" action="http://localhost/info.php" method="post">
+            <label for="name">name.</label>
+            <input type="text" id="name" name="name" placeholder="your name...">
+
+            <label for="subject">subject.</label>
+            <input type="text" id="subject" name="subject" placeholder="add subject...">
+
+            <label for="message">message.</label>
+            <textarea id="message" name="message" placeholder="write something..." style="height: 200px;"></textarea>
+
+            <input type="submit" value="submit">
+        </form>
+    </section>
 </body>
 
 </html>

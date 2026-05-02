@@ -1,0 +1,32 @@
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit]{
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #B0BF93;
+    color: white;
+}
+
+input[type=submit]:hover{
+    background-color: #9fac83;
+}
+
+.contact-form {
+    width: 60%;
+    border-radius: 5px;
+    padding: 20px;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
