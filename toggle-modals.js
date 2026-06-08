@@ -12,10 +12,10 @@ function closeModal(modal) {
 }
 
 // Add event listeners to images with data-modal attribute
-const images = document.querySelectorAll('img[data-modal]');
+const images = document.querySelectorAll('img[modal-id]');
 images.forEach(img => {
     img.addEventListener('click', () => {
-        const modalId = img.getAttribute('data-modal');
+        const modalId = img.getAttribute('modal-id');
         showModal(modalId);
     });
 });

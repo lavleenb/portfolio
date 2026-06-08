@@ -1,91 +1,58 @@
-button {
-    background-color: #855A2C;
-    border: none;
-    padding: 0.5rem 1rem;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: 0.2s ease;
-}
-button:hover {
-    background-color: #724c23;
-}
-
 .modal {
-  background-color: white;
-  display: none;
-  position: fixed;
-  z-index: 50;
-  left: 0;
-  top: 0;
-  max-width: 100%;
-  max-height: 100%;
-  align-items: center;
-  transition: opacity 0.5s ease;
+    background: white;
+    width: 90%;
+    height: 90%;
+    padding: 50px;
+    display: none;
+    justify-self: center;
+    position: absolute;
+    align-self:center;
 }
-.modal-header {
-  padding: 10px;
+.modal.show {
+    display: flex;
+    margin-bottom: 120rem;
+    box-sizing: content-box;
+    opacity: 1;
 }
-.modal-header h3 {
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 100;
-  font-size: 20pt;
-}
-.modal-header h4 {
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 100;
-  padding-bottom: 1in;
+.close-modal-btn {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18pt;
+    background-color: white;
+    border: none;
+    cursor: pointer;
 }
 
 .modal-content {
-  position: relative;
-  height: auto;
-  width: 70%;
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 5px;
-  overflow: hidden;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  animation: zoomIn 0.5s;
-}
-@keyframes zoomIn {
-  from {transform: scale(0.6);}
-  to {transform: scale(1);}
-}
-.left-image {
-  left: 0;
-  top: 0;
-  width: 50%;
-}
-.modal-image{
-  height: 40%;
-}
-.right-text {
-  width: 40%;
-  padding: 1in;
-}
-.right-text p {
-  vertical-align: middle;
-  text-align: right;
-  font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
 }
 
-.modal.show {
-  display: block;
-  opacity: 1;
+.modal-left-box {
+    width: 50%;
+    padding: 50px;
+}
+.modal-carousel {
+    height: 700px;
+    width: 700px;
+    position: relative;
+    margin: auto;
+    overflow-y: scroll;
+}
+.carousel-img {
+  max-width: 700px;
+  overflow: scroll;
 }
 
-/* .close {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  color: #ffffff;
-  font-size: 35px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: transform 0.3s;
-} */
+.modal-right-box {
+    width: 50%;
+    justify-items: left;
+}
+.modal-right-box h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 18pt;
+}
+.modal-right-box p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+}
