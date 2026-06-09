@@ -10,7 +10,7 @@ input[type=text], select, textarea {
     resize: vertical;
 }
 
-input[type=submit]{
+button[type=submit]{
     padding: 12px 20px;
     border: none;
     border-radius: 10px;
@@ -19,14 +19,15 @@ input[type=submit]{
     color: white;
 }
 
-input[type=submit]:hover{
+button[type=submit]:hover{
     background-color: #9fac83;
 }
 
-.contact-form {
+.contact-form-container {
     width: 60%;
     border-radius: 5px;
     padding: 20px;
+    justify-self: center;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
 }
