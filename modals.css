@@ -1,18 +1,20 @@
 .modal {
     background: white;
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 80%;
     padding: 50px;
     display: none;
+    bottom: 0;
+    left: 10;
     justify-self: center;
-    position: absolute;
+    position: fixed;
     align-self:center;
 }
 .modal.show {
     display: flex;
-    margin-bottom: 120rem;
     box-sizing: content-box;
     opacity: 1;
+    animation: slideIn 0.5s;
 }
 .close-modal-btn {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -30,6 +32,7 @@
 .modal-left-box {
     width: 50%;
     padding: 50px;
+    margin-right: 1in;
 }
 .modal-carousel {
     height: 700px;
@@ -55,4 +58,13 @@
 .modal-right-box p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16pt;
+}
+
+@keyframes slideIn {
+    from {transform: translateY(1rem);
+        opacity: 50%;
+    }
+    to {transform: translateY(0);
+        opacity: 100%;
+    }
 }
