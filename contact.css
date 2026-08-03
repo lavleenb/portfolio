@@ -2,7 +2,6 @@ input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
     border: none;
-    border-radius: 10px;
     background-color: white;
     box-sizing: border-box;
     margin-top: 6px;
@@ -13,7 +12,6 @@ input[type=text], select, textarea {
 button[type=submit]{
     padding: 12px 20px;
     border: none;
-    border-radius: 10px;
     cursor: pointer;
     background-color: #B0BF93;
     color: white;
@@ -25,7 +23,6 @@ button[type=submit]:hover{
 
 .contact-form-container {
     width: 60%;
-    border-radius: 5px;
     padding: 20px;
     justify-self: center;
     align-items: center;

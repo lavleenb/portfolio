@@ -133,7 +133,7 @@ section {
 }
 
 a:hover {
-    background-color: #e1d8d8;
+    text-decoration: underline;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -205,12 +205,6 @@ a:hover {
     margin-left: 7px;
     margin-top: 9px;
     margin-bottom: 0;
-}
-
-a:hover {
-    background-color: #e1d8d8;
-    border-radius: 10px;
-    cursor: pointer;
 }
 
 footer{
